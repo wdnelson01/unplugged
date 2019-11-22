@@ -114,10 +114,11 @@ html {
    Author's custom styles
    ========================================================================== */
 
+  /* -- General -- */
+
   .content-wrapper {
     width: 90%;
     margin: 50px 0;
-    border: 2px solid black;
   } 
 
   /* ---------- Base Header - Footer Styles ---------- */
@@ -128,7 +129,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: yellow;
   }
 
   header {
@@ -141,7 +141,6 @@ html {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    border: 2px solid green;
   }
 
   .header-divider {
@@ -156,23 +155,19 @@ html {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
-    border: 2px solid red;
   }
   
   header nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 0px;
+    padding: 0px; /* -- Needed to remove default style -- */
   }
   
   /* -- Footer -- */
 
   footer {
-    display: flex;
     flex-direction: column;
-    border: 2px solid purple;
   }
 
   footer p {
@@ -180,23 +175,11 @@ html {
   }
 
   footer .content-wrapper {
-    display: flex;
-    flex-direction: column;
     width: 55%;
     margin: 50px 0;
-    border: 2px solid blue;
-  }
-
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
 
   footer .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 50px;
   }
 
@@ -241,7 +224,6 @@ html {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: orange;
   }
 
   .features h2 {
@@ -290,7 +272,7 @@ html {
     flex-flow: row wrap;
   } 
 
-  .contact {
+  .contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,11 +293,11 @@ html {
   }
 
   .faq .content-wrapper {
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
   }
 
   .faq h2 {
@@ -415,16 +397,141 @@ html {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+        /* ---------- Tablet Styles - Homepage ---------- */
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+        /* -- General -- */
+        .content-wrapper {
+          max-width: 640px;
+          margin: 100px 0;
+        }
+
+        /* -- Header -- */
+
+        header {
+          justify-content: space-around;
+        }
+
+        header .content-wrapper {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        header nav {
+          width: 20%;
+        }
+
+        header nav ul {
+          justify-content: space-between;
+        }
+
+        .header-divider {
+          display: none;
+        }
+
+        /* -- Hero Area -- */
+
+        /* -- Aside -- */
+
+        aside .content-wrapper {
+          margin: 50px 0;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+        }
+
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form {
+          width: 35%;
+          margin: 0;
+        }
+
+        /* -- Features -- */
+
+        .features article {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column wrap;
+          flex-basis: 50%;
+        }
+
+        .features .features-item-description {
+          width: 50%;
+        }
+
+        /* -- Reviews -- */
+
+        .reviews article {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .reviews article div {
+          width: 49%; /* -- Could this be 50% with border-box set? -- */
+        }
+
+        /* -- Footer -- */
+
+        footer .content-wrapper {
+          width: 65%;
+          margin: 100px 0;
+        }
+
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        footer .contact {
+          margin-bottom: 0;
+        }
+
+        footer .copyright {
+          width: 100%;
+        }
+
+        /* ---------- Tablet Styles - About ---------- */
+
+        .mission-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .mission-content p {
+          width: 40%;
+        }
+
+        .contact-section .content-wrapper h2 {
+          width: 80%;
+        }
+
+        .contact-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        /* ---------- Tablet Styles - FAQ ---------- */
+
+        .faq .content-wrapper {
+          justify-content: space-between;
+        }
+
+        .faq-content {
+          flex-basis: 40%;
+        }
+
+        .faq h2 {
+          width: 100%;
+        }
+   }  
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+    }
 
 /* ==========================================================================
    Print styles.
