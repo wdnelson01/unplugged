@@ -121,9 +121,10 @@ html {
   }
 
   body {
-    color: #e2e3ed;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #e2e3ed;
+    text-align: left;
   }
 
   ul,
@@ -156,11 +157,11 @@ html {
   }
 
   img {
-
+    width: 100%;
   }
 
   figure {
-
+    margin: 0;
   }
 
   address {
@@ -191,6 +192,14 @@ html {
   
   header .content-wrapper {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header figure {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,6 +281,9 @@ html {
   /* -- Hero -- */
 
   .hero-area {
+    background: url('../img/hero.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -319,6 +331,8 @@ html {
   /* -- Features -- */
 
   .features {
+    background: url('../img/features.jpg') center no-repeat #333;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -507,9 +521,9 @@ html {
    Modify as content requires.
    ========================================================================== */
 
+   /* ---------- Tablet Styles - Homepage ---------- */
    @media only screen and (min-width: 768px) {
-        /* ---------- Tablet Styles - Homepage ---------- */
-
+     
         /* -- General -- */
         .content-wrapper {
           max-width: 640px;
@@ -535,6 +549,10 @@ html {
         header .content-wrapper {
           width: 100%;
           justify-content: space-between;
+        }
+
+        header figure {
+          width: 30%;
         }
 
         header nav {
@@ -601,6 +619,7 @@ html {
           width: 90%;
         }
 
+        .reviews article figure,
         .reviews article div {
           width: 49%; /* -- Could this be 50% with border-box set? -- */
         }
@@ -692,9 +711,10 @@ html {
         }
 
    }  
-     
+    
+   /* ---------- Desktop Styles - Homepage ---------- */
     @media only screen and (min-width: 1200px) {
-    /* ---------- Desktop Styles - Homepage ---------- */
+
     /* -- General -- */
 
     .content-wrapper {
@@ -714,7 +734,13 @@ html {
       font-size: 1.25em;
       line-height: 1.333;
     }
+
+    /* -- Header -- */
     
+    header figure {
+      width: 24%;
+    }
+
     /* -- Hero -- */
 
     .hero-area h1 {
