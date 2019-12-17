@@ -7,6 +7,35 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+ /*
+  * CONTENTS
+  *
+  * BROWSER UPGRADE PROMPT
+  *
+  * BASE STYLES
+  *
+  * CUSTOM STYLES
+  * General
+  * Base Header/Footer
+  * Mobile Styles - Homepage
+  * Mobile Styles - About
+  * Mobile Styles - FAQ
+  *
+  * HELPER CLASSES
+  *
+  * MEDIA QUERIES
+  * Tablet Styles - General
+  * Tablet Styles - Homepage
+  * Tablet Styles - About
+  * Tablet Styles - FAQ
+  * Desktop Styles - General
+  * Desktop Styles - Homepage
+  * Desktop Styles - About
+  * Desktop Styles - FAQ
+  *
+  * PRINT STYLES
+  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -114,10 +143,10 @@ html {
    Author's custom styles
    ========================================================================== */
 
-/* -- General -- */
+/* General ================================================================= */
 
 html {
-  font-size: 16px; /* -- 1em = 16px -- */
+  font-size: 16px; /* -- 16px = 1em -- */
 }
 
 body {
@@ -176,7 +205,7 @@ address {
   margin: 50px 0;
 } 
 
-/* ---------- Base Header - Footer Styles ---------- */
+/* Base Header / Footer Styles ============================================= */
 
 header,
 footer {
@@ -187,7 +216,7 @@ footer {
   flex-flow: row wrap;
 }
 
-/* -- Header -- */
+/* - Header ================================================================ */
 
 header {
   padding: 15px 0;
@@ -241,7 +270,7 @@ nav a:hover {
   border-bottom: 3px solid #e2e3ed;
 }
 
-/* -- Footer -- */
+/* - Footer ================================================================ */
 
 footer {
   text-align: center;
@@ -285,9 +314,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile Styles - Homepage -------------------- */
+/* Mobile Styles - Homepage ================================================ */
 
-/* -- Hero -- */
+/* - Hero ================================================================== */
 
 .hero-area {
   background: url('../img/hero.jpg') center no-repeat #333;
@@ -305,7 +334,7 @@ footer .copyright {
   margin: 0;
 }
 
-/* -- Aside -- */
+/* - Aside ================================================================= */
 
 aside {
   background-color: #527158;
@@ -347,7 +376,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/* -- Features -- */
+/* - Features ============================================================== */
 
 .features {
   background: url('../img/features.jpg') center no-repeat #333;
@@ -383,7 +412,7 @@ input[type=button] {
   margin: 0;
 }
 
-/* -- Reviews -- */
+/* - Reviews =============================================================== */
 
 .reviews {
   background-color: #2a423a;
@@ -402,7 +431,7 @@ input[type=button] {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile Styles - About -------------------- */
+/* Mobile Styles - About =================================================== */
 
 .mission {
   background-color: #527158;
@@ -440,7 +469,7 @@ input[type=button] {
   margin: 0;
 }
 
-/* -------------------- Mobile Styles - FAQ -------------------- */
+/* Mobile Styles - FAQ ===================================================== */
 
 .faq {
   background-color: #527158;
@@ -555,10 +584,10 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-/* -------------------- Tablet Styles -------------------- */
+/* Tablet Styles =========================================================== */
 @media only screen and (min-width: 768px) {
 
-  /* -- General -- */
+  /* - General ============================================================ */
 
   .content-wrapper {
     max-width: 640px;
@@ -575,7 +604,7 @@ input[type=button] {
     line-height: 1.25;
   }
 
-  /* -- Header -- */
+  /* - Header ============================================================== */
 
   header {
     justify-content: space-around;
@@ -602,7 +631,7 @@ input[type=button] {
     display: none;
   }
 
-  /* -- Footer -- */
+  /* - Footer ============================================================== */
 
   footer .content-wrapper {
     width: 65%;
@@ -638,9 +667,9 @@ input[type=button] {
     width: 100%;
   }
 
-  /* -------------------- Tablet Styles - Homepage -------------------- */
+  /* Tablet Styles - Homepage ============================================== */
 
-  /* -- Hero -- */
+  /* - Hero ================================================================ */
 
   .hero-area h1 {
     font-size: 3em;
@@ -648,7 +677,7 @@ input[type=button] {
     margin: 0;
   }
 
-  /* -- Aside -- */
+  /* - Aside =============================================================== */
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -667,7 +696,7 @@ input[type=button] {
     margin-top: 0;
   }
 
-  /* -- Features -- */
+  /* - Features ============================================================ */
 
   .features h2 {
     margin: 0 20px 20px 0;
@@ -685,7 +714,7 @@ input[type=button] {
     width: 50%;
   }
 
-  /* -- Reviews -- */
+  /* - Reviews ============================================================= */
 
   .reviews article {
     display: flex;
@@ -706,7 +735,7 @@ input[type=button] {
     margin: 0;
   }
 
-  /* -------------------- Tablet Styles - About -------------------- */
+  /* Tablet Styles - About ================================================= */
 
   .mission-content {
     display: flex;
@@ -736,7 +765,7 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-  /* -------------------- Tablet Styles - FAQ -------------------- */
+  /* Tablet Styles - FAQ =================================================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -763,10 +792,10 @@ input[type=button] {
 
 }
 
-/* -------------------- Desktop Styles -------------------- */
+/* Desktop Styles ========================================================== */
 @media only screen and (min-width: 1200px) {
-
-  /* -- General -- */
+  
+  /* - General ============================================================= */
 
   .content-wrapper {
     max-width: 960px;
@@ -786,7 +815,7 @@ input[type=button] {
     line-height: 1.333;
   }
 
-  /* -- Header -- */
+  /* - Header ============================================================== */
   
   header figure {
     width: 24%;
@@ -796,15 +825,15 @@ input[type=button] {
     width: 20%;
   }
 
-  /* -------------------- Desktop Styles - Homepage -------------------- */
+  /* Desktop Styles - Homepage ============================================= */
 
-  /* -- Hero -- */
+  /* - Hero ================================================================ */
 
   .hero-area h1 {
     font-size: 3.75em;
   }
 
-  /* -- Aside -- */
+  /* - Aside =============================================================== */
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -818,19 +847,19 @@ input[type=button] {
     font-size: 1.125em;
   }
 
-  /* -- Features -- */
+  /* - Features ============================================================ */
 
   .features article {
     flex-basis: 33%;
   }
 
-  /* -- Reviews -- */
+  /* - Reviews ============================================================= */
 
   .reviews article div {
     width: 42%;
   }
 
-  /* -------------------- Desktop Styles - About -------------------- */
+  /* Desktop Styles - About ================================================ */
 
   .map figure {
     padding-bottom: 37.5%;
@@ -850,7 +879,7 @@ input[type=button] {
     width: 90%;
   }
 
-  /* -------------------- Desktop Styles - FAQ -------------------- */
+  /* Desktop Styles - FAQ ================================================== */
 
   .faq h2 {
     width: 100%;
