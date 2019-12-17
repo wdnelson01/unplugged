@@ -237,6 +237,10 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+nav a:hover {
+  border-bottom: 3px solid #e2e3ed;
+}
+
 /* -- Footer -- */
 
 footer {
@@ -354,7 +358,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 20px; /*-- Not convinced this is correct --*/
+  margin-bottom: 20px;
 }
 
 .features article {
@@ -389,7 +393,7 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px; /*-- Not convinced this is correct --*/
+  margin-bottom: 40px;
   line-height: 1;
 }
 
@@ -455,18 +459,11 @@ input[type=button] {
 }
 
 .faq h2 {
-  /* margin-bottom: 50px; */
   line-height: 1;
 }
 
-.faq-content {
-  /* margin-bottom: 25px;*/
-}
-
 .faq-content h4 {
-  /* margin-top: 0px;*/
   line-height: 1.333;
-  /* font-weight: 700;*/
 }
 
 /* ==========================================================================
@@ -701,7 +698,7 @@ input[type=button] {
 
   .reviews article figure,
   .reviews article div {
-    width: 49%; /* -- Could this be 50% with border-box set? -- */
+    width: 49%;
   }
 
   .reviews h3 {
@@ -805,7 +802,6 @@ input[type=button] {
 
   .hero-area h1 {
     font-size: 3.75em;
-    /* width: 60%; */
   }
 
   /* -- Aside -- */
@@ -823,10 +819,6 @@ input[type=button] {
   }
 
   /* -- Features -- */
-
-  .features h2 {
-    /* width: 70%; */
-  }
 
   .features article {
     flex-basis: 33%;
@@ -848,10 +840,6 @@ input[type=button] {
   .contact-section .content-wrapper h2 {
     width: 100%;
     font-size: 3em;
-  }
-
-  .contact-section .content-wrapper h2 {
-    /*margin-bottom: 40px;*/
   }
 
   .contact-content h4 {
