@@ -10,7 +10,7 @@
  /*
   * CONTENTS
   *
-  * BASE STYLES................ line 41
+  * BASE STYLES................ line 39
   *
   * BROWSER UPGRADE PROMPT..... line 131
   *
@@ -24,9 +24,9 @@
   * HELPER CLASSES............. line 498
   *
   * MEDIA QUERIES
-  * Tablet Styles - General.... line 587
+  * Tablet Styles - General.... line 590
   * Tablet Styles - Homepage... line 670
-  * Tablet Styles - About...... line 736
+  * Tablet Styles - About...... line 738
   * Tablet Styles - FAQ........ line 768
   * Desktop Styles - General... line 798
   * Desktop Styles - Homepage.. line 828
@@ -202,7 +202,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 35px 0; /* Setting at 35px top/bottom margin for mobile devices, formerly at 50px */
 } 
 
 /* Base Header / Footer Styles ============================================= */
@@ -587,7 +587,7 @@ input[type=button] {
 /* Tablet Styles =========================================================== */
 @media only screen and (min-width: 768px) {
 
-  /* - General ============================================================ */
+  /* General ============================================================ */
 
   .content-wrapper {
     max-width: 640px;
@@ -795,7 +795,7 @@ input[type=button] {
 /* Desktop Styles ========================================================== */
 @media only screen and (min-width: 1200px) {
   
-  /* - General ============================================================= */
+  /* General ============================================================= */
 
   .content-wrapper {
     max-width: 960px;
